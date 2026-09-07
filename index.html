@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Secret Kwek-Kwek Files</title>
+    <link rel="stylesheet" href="Test.css">
+</head>
+<body>
+
+    <!-- LANDING -->
+    <div id="landing" class="hero">
+        <div class="content">
+            <p class="tag">THE SECRET</p>
+            <h1>KWEK-KWEK<br>FILES</h1>
+            <div class="divider">
+                <span></span>
+                <div class="egg-icon">🍳</div>
+                <span></span>
+            </div>
+            <p class="subtitle">Click To Learn The Recipe Step by Step</p>
+            <button class="btn" onclick="startRecipe()">START</button>
+        </div>
+    </div>
+
+    <!-- RECIPE -->
+    <div id="recipe" style="display: none;">
+        
+        <div id="step1" class="step">
+            <h2>Step 1: Boil the Eggs</h2>
+            <p>Boil 20–30 quail eggs for 5–7 minutes until hard-boiled.</p>
+            <div class="media-box">
+                <img src="step1.jpg" alt="Step 1">
+            </div>
+            <button class="btn" onclick="goToStep(2)">Next →</button>
+        </div>
+
+        <div id="step2" class="step" style="display:none;">
+            <h2>Step 2: Peel the Eggs</h2>
+            <p>Cool the eggs in cold water, then carefully peel the shells.</p>
+            <div class="media-box">
+                <img src="step2.jpg" alt="Step 2">
+            </div>
+            <button class="btn secondary" onclick="goToStep(1)">← Previous</button>
+            <button class="btn" onclick="goToStep(3)">Next →</button>
+        </div>
+
+        <div id="step3" class="step" style="display:none;">
+            <h2>Step 3: Make the Orange Batter</h2>
+            <p>Mix flour, baking powder, salt, pepper and orange coloring with water.</p>
+            <div class="media-box">
+                <img src="step3.jpg" alt="Step 3">
+            </div>
+            <button class="btn secondary" onclick="goToStep(2)">← Previous</button>
+            <button class="btn" onclick="goToStep(4)">Next →</button>
+        </div>
+
+        <div id="step4" class="step" style="display:none;">
+            <h2>Step 4: Coat the Eggs</h2>
+            <p>Roll the eggs in flour, then dip them in the orange batter.</p>
+            <div class="media-box">
+                <img src="step4.jpg" alt="Step 4">
+            </div>
+            <button class="btn secondary" onclick="goToStep(3)">← Previous</button>
+            <button class="btn" onclick="goToStep(5)">Next →</button>
+        </div>
+
+        <div id="step5" class="step" style="display:none;">
+            <h2>Step 5: Fry the Kwek-Kwek</h2>
+            <p>Deep-fry until golden orange and crispy (2–4 minutes).</p>
+            <div class="media-box">
+                <img src="step5.jpg" alt="Step 5">
+            </div>
+            <button class="btn secondary" onclick="goToStep(4)">← Previous</button>
+            <button class="btn" onclick="goToStep(6)">Next →</button>
+        </div>
+
+        <div id="step6" class="step" style="display:none;">
+            <h2>Step 6: Make the Sauce</h2>
+            <p>Mix vinegar (suka) with chopped onion and garlic.</p>
+            <div class="media-box">
+                <img src="step6.jpg" alt="Step 6">
+            </div>
+            <button class="btn secondary" onclick="goToStep(5)">← Previous</button>
+            <button class="btn" onclick="goToStep(7)">Next →</button>
+        </div>
+
+        <div id="step7" class="step" style="display:none;">
+            <h2>Step 7: Serve & Enjoy!</h2>
+            <p>Serve hot kwek-kwek with the suka sauce. Enjoy!</p>
+            <div class="media-box">
+                <img src="step7.jpg" alt="Step 7">
+            </div>
+            <button class="btn secondary" onclick="goToStep(6)">← Previous</button>
+            <button class="btn" onclick="goHome()">Back to Home</button>
+        </div>
+
+    </div>
+
+    <script src="Test.js"></script>
+</body>
+</html>
