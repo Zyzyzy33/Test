@@ -18,7 +18,7 @@ body.recipe-mode {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.media-box {
+.box {
     width: 180px;
     height: 180px;
     margin: 15px auto;
@@ -27,7 +27,7 @@ body.recipe-mode {
     background: #eee;
 }
 
-.media-box img {
+.boxt {
     width: 100%;
     height: 100%;
     object-fit: cover;
